@@ -1,0 +1,240 @@
+@import 'data/base.css';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@import url('https://fonts.googleapis.com/css?family=Russo+One');
+
+html {
+	font-family: 'Roboto', sans-serif;
+	background-color: #FFFFFF;
+}
+/*
+HEADER_DEF
+*/
+#topbar {
+	width: 100%;
+	min-height: 20px;
+	background-color: navy;
+	display: none;
+}
+
+#head_wrapper {
+	background-color: transparent;
+	width: 100%;
+}
+
+#head_wrapper .image {
+	/* disabled on default*/
+	display: none;
+	/**/
+}
+/*
+HEADER_END
+*/
+#top_menu {
+	width: 100%;
+	height: 50px;
+	background-color: #f1f1f1;
+	position: fixed;
+}
+
+#top_menu a {
+	text-decoration: none;
+	color: black;
+}
+
+#top_menu .logo {
+	width: 15%;
+	height: 50px;
+	background-color: #f1f1f1;
+	font-family: 'Russo One', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	/*box-shadow: inset 0 0 10px #000000;*/
+}
+/*
+MENU_DEF
+*/
+#menu_wrapper {
+	margin-top: 50px;
+	padding: 0;
+	width: 15%;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: none;
+}
+
+#menu_wrapper ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu_wrapper li a {
+	display: block;
+	color: #000;
+	padding: 8px 16px;
+	text-decoration: none;
+	transition: background-color 0.6s, color 0.6s, border 0.6s;
+}
+
+#menu_wrapper li a.active {
+	background-color: #FFFFFF;
+	border-left: 6px solid #4B77BE;
+	box-shadow: 0 8px 6px -6px black;
+	color: black;
+	transition: border 0.6s, color 0.6s, background-color 0.6s;
+}
+
+#menu_wrapper li a.active:hover {
+	background-color: #4B77BE;
+	border-left: 6px solid #00bbf9;
+	color: white;
+}
+
+#menu_wrapper li a:hover {
+	background-color: #4B77BE;
+	color: white;
+}
+/*
+MENU_END
+*/
+/*
+BODY_DEF
+*/
+#body_wrapper {
+	margin-left: 15%;
+	padding: 1px 16px;
+	height: 100%;
+}
+
+#body_wrapper .content {
+	margin-top: 65px;
+}
+/*
+BODY_END
+*/
+/*
+TABLE_DEF
+*/
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	text-align: left;
+	padding: 8px;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+tr:hover {
+	background-color: #DDDDDD;
+}
+/*
+TABLE_END
+*/
+/*
+BUTTON_DEF
+*/
+.btn-group button {
+	background-color: #4B77BE; /* Green background */
+	border: 1px solid #294574; /* Green border */
+	color: white; /* White text */
+	padding: 10px 24px; /* Some padding */
+	cursor: pointer; /* Pointer/hand icon */
+	float: left; /* Float the buttons side by side */
+	transition: background-color 0.6s, box-shadow 0.1s;
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.btn-group button:active {
+	background-color: #4B77BE;
+	box-shadow: inset 0 0 10px #000000;
+}
+.btn-group button[disabled] {
+	background-color: #808080;
+	box-shadow: inset 0 0 10px #000000;
+}
+.btn-group button[disabled]:hover {
+	background-color: #808080;
+	box-shadow: inset 0 0 20px #000000;
+}
+/* Add a background color on hover */
+.btn-group button:hover {
+	background-color: #39609f;
+}
+/*
+BUTTON_END
+*/
+/*
+CONTENTBOX_DEF
+*/
+.content-box {
+	width: 100%;
+	color: black;
+	min-height: 20px;
+	height: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19);
+	padding: 5px;
+	min-height: 20px;
+	box-sizing: border-box;
+	margin-top: 18px;
+}
+
+.blue {
+	background-color: #1E90FF;
+	color: white;
+}
+
+.gold {
+	background-color: #FFD700;
+	color: black;
+}
+
+.green {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.red {
+	background-color: #C3272B;
+	color: black;
+}
+
+.purple {
+	background-color: #8E44AD;
+	color: white;
+}
+
+.greyblue {
+	background-color: #6C7A89;
+	color: black;
+}
+/*
+CONTENT_END
+*/
+textarea#styled {
+	width: 100%;
+	min-height: 200px;
+}

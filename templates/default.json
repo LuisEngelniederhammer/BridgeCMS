@@ -1,0 +1,62 @@
+{
+	"head": {
+		"h000": {
+			"typ": "php",
+			"data": "require_once 'system/menumgr.class.php';"
+		},
+		"h001": {
+			"typ": "php",
+			"data": "require_once 'system/pagemgr.class.php';"
+		},
+		"h003": {
+			"typ": "php",
+			"data": "$thisPage = system\\pageManager::init ()->getPage ( $_SERVER ['QUERY_STRING'] );"
+		}
+	},
+	"body": {
+		"0000": {
+			"id": "topbar",
+			"class": "",
+			"typ": "html",
+			"data": ""
+		},
+		"0001": {
+			"id": "head_wrapper",
+			"class": "",
+			"typ": "html",
+			"data": {
+				"0002": {
+					"id": "",
+					"class": "image",
+					"typ": "html",
+					"data": ""
+				}
+			}
+		},
+		"0003": {
+			"id": "menu_wrapper",
+			"class": "",
+			"typ": "php",
+			"data": " system\\menuManager::init ()->setActive (  $thisPage['pageName'] )->displayMenu ();"
+		},
+		"0004": {
+			"id": "body_wrapper",
+			"class": "",
+			"typ": "html",
+			"data": {
+				"0005": {
+					"id": "",
+					"class": "content",
+					"typ": "php",
+					"data": "echo $thisPage ['body']; $x = 'depp';"
+				},
+				"0006": {
+					"id": "",
+					"class": "",
+					"typ": "php",
+					"data": "echo $x;"
+				}
+			}
+		}
+	}
+}

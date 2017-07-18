@@ -1,0 +1,2 @@
+Use include in template system
+create tpl files with {identifier_bla_bla}
