@@ -17,24 +17,6 @@ namespace system
 		const port = "3306";
 	}
 	
-	/*
-	 * abstract class config
-	 * {
-	 *
-	 * const db_prefix = "c55fge";
-	 *
-	 * const host = "mysql22.1blu.de";
-	 *
-	 * const database = "db260539x2560228";
-	 *
-	 * const user = "s260539_2560228";
-	 *
-	 * const password = "!Seppdepp12?";
-	 *
-	 * const port = "3307";
-	 * }
-	 *
-	 */
 	abstract class database
 	{
 		const users = config::db_prefix . "_users";
